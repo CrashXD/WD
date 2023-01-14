@@ -1,0 +1,46 @@
+.header {
+    background-color: #EEEFF1;
+    padding: 72px 0;
+}
+
+.header__logo {
+    float: left;
+    width: 85px;
+    display: block;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__nav {
+    float: right;
+}
+
+.header__nav ul {
+    list-style: none;
+}
+
+.header__nav li {
+    float: left;
+    margin-right: 42px;
+}
+
+.header__nav li:last-of-type {
+    margin-right: 0;
+}
+
+.header__item {
+    text-transform: uppercase;
+    transition: .3s;
+    line-height: 38px;
+}
+
+.header__item:hover {
+    color: #34547A;
+}
+
+.header__item_active {
+    color: #34547A;
+    font-weight: 500;
+}
