@@ -1,4 +1,113 @@
-@import url(style.css);
-@import url(header/header.css);
-@import url(first/first.css);
-@import url(button/button.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #727272;
+  line-height: 164%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: calc(100% - 60px);
+  max-width: 1100px;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    width: calc(100% - 30px);
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.header {
+  background-color: #EEEFF1;
+  padding: 72px 0;
+}
+.header__logo {
+  float: left;
+  width: 85px;
+  display: block;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__nav {
+  float: right;
+}
+.header__nav ul {
+  list-style: none;
+}
+.header__nav li {
+  float: left;
+  margin-right: 42px;
+}
+.header__nav li:last-of-type {
+  margin-right: 0;
+}
+.header__item {
+  text-transform: uppercase;
+  transition: 0.3s;
+  line-height: 38px;
+}
+.header__item:hover {
+  color: #34547A;
+}
+.header__item_active {
+  color: #34547A;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .header__logo, .header__nav {
+    float: none;
+  }
+  .header__logo {
+    margin: 0 auto;
+  }
+  .header__nav {
+    width: max-content;
+    margin: 16px auto 0;
+  }
+  .header__nav li {
+    margin-right: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    padding: 36px 0;
+  }
+  .header__nav {
+    text-align: center;
+  }
+  .header__nav li {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.first {
+  background-color: #EEEFF1;
+}
+
+/*# sourceMappingURL=main.css.map */
