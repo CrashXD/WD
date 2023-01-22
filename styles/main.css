@@ -56,31 +56,33 @@ h1, h2, h3, h4, h5, h6 {
   padding: 72px 0;
   flex: 0 0 auto;
 }
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
 .header__logo {
-  float: left;
   width: 85px;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 .header__logo img {
   width: 100%;
 }
-.header__nav {
-  float: right;
-}
 .header__nav ul {
   list-style: none;
+  display: flex;
+  gap: 8px 24px;
+  flex-wrap: wrap;
 }
 .header__nav li {
-  float: left;
-  margin-right: 42px;
-}
-.header__nav li:last-of-type {
-  margin-right: 0;
+  flex-shrink: 0;
 }
 .header__item {
   text-transform: uppercase;
   transition: 0.3s;
-  line-height: 38px;
 }
 .header__item:hover {
   color: #34547A;
@@ -91,18 +93,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  .header__logo, .header__nav {
-    float: none;
+  .header .wrapper {
+    flex-direction: column;
+    row-gap: 34px;
   }
-  .header__logo {
-    margin: 0 auto;
-  }
-  .header__nav {
-    width: max-content;
-    margin: 16px auto 0;
-  }
-  .header__nav li {
-    margin-right: 32px;
+  .header__nav ul {
+    justify-content: center;
   }
 }
 @media (max-width: 576px) {
@@ -112,9 +108,8 @@ h1, h2, h3, h4, h5, h6 {
   .header__nav {
     text-align: center;
   }
-  .header__nav li {
-    float: none;
-    margin-right: 0;
+  .header__nav ul {
+    flex-direction: column;
   }
 }
 
@@ -154,6 +149,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__socials a img {
   max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .footer .wrapper {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+  .footer__info {
+    text-align: center;
+    row-gap: 4px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
