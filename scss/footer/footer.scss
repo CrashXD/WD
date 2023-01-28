@@ -41,6 +41,8 @@
 
 .footer {
     @media (max-width: $mobile) {
+        padding: 32px 0;
+
         .wrapper {
             flex-direction: column-reverse;
             row-gap: 20px;

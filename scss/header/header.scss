@@ -51,6 +51,8 @@
 
 .header {
     @media (max-width: $tablet) {
+        padding: 32px 0;
+
         .wrapper {
             flex-direction: column;
             row-gap: 34px;
