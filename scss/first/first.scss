@@ -4,6 +4,7 @@
 
     .wrapper {
         display: flex;
+        column-gap: 30px;
     }
 
     &__image {
@@ -26,7 +27,6 @@
     &__description {
         flex: 1 0 50%;
         min-width: 480px;
-        padding-left: 15px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
