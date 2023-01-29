@@ -13,4 +13,13 @@
     &:hover {
         background-color: $color-button-primary-active;
     }
+
+    &_light {
+        color: $color-primary;
+        background-color: $color-white;
+
+        &:hover {
+            background-color: $color-gray;
+        }
+    }
 }

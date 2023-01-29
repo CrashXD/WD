@@ -497,6 +497,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   row-gap: 57px;
 }
+.about__advantages {
+  display: flex;
+  justify-content: center;
+  column-gap: 48px;
+}
+.about .advantage {
+  color: #34547A;
+}
 .about__text {
   width: 100%;
   max-width: 540px;
@@ -528,9 +536,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .advantages .wrapper {
   display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.advantages__items {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 48px;
+}
+.advantages .button {
+  align-self: center;
 }
 @media (max-width: 576px) {
   .advantages {
@@ -581,6 +597,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button:hover {
   background-color: #28486F;
+}
+.button_light {
+  color: #34547A;
+  background-color: #ffffff;
+}
+.button_light:hover {
+  background-color: #EEEFF1;
 }
 
 .footer {
