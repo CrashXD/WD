@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: $color-white;
 }
 
 a {
@@ -27,11 +28,15 @@ a {
 
 h1 {
     font-size: 48px;
-    line-height: 115%;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $color-black;
+    line-height: 115%;
 }
 
 .wrapper {
