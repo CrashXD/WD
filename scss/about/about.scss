@@ -13,9 +13,7 @@
     }
 
     &__advantages {
-        display: flex;
-        justify-content: center;
-        column-gap: 48px;
+        @include advantagesContainer;
     }
 
     .advantage {

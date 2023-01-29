@@ -500,7 +500,8 @@ h1, h2, h3, h4, h5, h6 {
 .about__advantages {
   display: flex;
   justify-content: center;
-  column-gap: 48px;
+  flex-wrap: wrap;
+  gap: 48px;
 }
 .about .advantage {
   color: #34547A;
