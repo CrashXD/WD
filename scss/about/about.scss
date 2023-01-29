@@ -6,8 +6,7 @@
     }
 
     .wrapper {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         text-align: center;
         align-items: center;
         row-gap: 57px;
@@ -16,8 +15,7 @@
     &__text {
         width: 100%;
         max-width: 540px;
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         row-gap: 50px;
     }
 

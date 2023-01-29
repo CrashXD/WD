@@ -528,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .advantages .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 48px;
 }
@@ -536,15 +536,14 @@ h1, h2, h3, h4, h5, h6 {
   .advantages {
     padding: 50px 0;
   }
-  .advantages .wrapper {
-    justify-content: center;
-  }
 }
 
 .advantage {
   display: flex;
   column-gap: 20px;
   color: #ffffff;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .advantage__icon {
   width: 50px;

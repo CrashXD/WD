@@ -4,17 +4,13 @@
 
     .wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 48px;
     }
 
     @media (max-width: $mobile) {
         padding: 50px 0;
-
-        .wrapper {
-            justify-content: center;
-        }
     }
 }
 
@@ -22,6 +18,8 @@
     display: flex;
     column-gap: 20px;
     color: $color-white;
+    flex-shrink: 0;
+    flex-grow: 0;
 
     &__icon {
         width: 50px;
@@ -32,8 +30,7 @@
     }
 
     &__info {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         row-gap: 10px;
         line-height: 120%;
     }
