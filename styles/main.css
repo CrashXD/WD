@@ -582,6 +582,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.gallery__item {
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
+.gallery__item img {
+  width: 1px;
+  opacity: 0;
+}
+
 .button {
   height: 55px;
   padding: 0 41px;
