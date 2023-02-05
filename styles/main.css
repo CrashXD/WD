@@ -591,12 +591,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gallery__item {
   aspect-ratio: 1/1;
+  position: relative;
 }
 .gallery__item img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gallery__item:before, .gallery__item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.gallery__item:before {
+  background-color: rgba(52, 84, 122, 0.8);
+}
+.gallery__item:after {
+  background-image: url("../images/eye.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery__item:hover:before, .gallery__item:hover:after {
+  opacity: 1;
+}
+@media (max-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 .button {
