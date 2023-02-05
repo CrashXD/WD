@@ -29,6 +29,7 @@
 
     &__video {
         align-self: stretch;
+        position: relative;
 
         video {
             width: 100%;
@@ -37,6 +38,31 @@
 
         img {
             width: 100%;
+            display: block;
+        }
+
+        &:before {
+            @include beforeHover(.65);
+        }
+
+        &:after {
+            @include beforeHover(1);
+        }
+
+        &:before {
+            background-color: black;
+        }
+
+        &:after {
+            background-image: url('../images/play.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:hover {
+            &:before {
+                opacity: .8;
+            }
         }
     }
 
