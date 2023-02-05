@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WD</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link rel="stylesheet" href="styles/main.css">
 
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
@@ -157,6 +161,24 @@
                 <button class="button button_light">О наградах</button>
             </div>
         </section>
+        <!--
+            <section class="about about_gray">
+                <div class="wrapper">
+                    <div class="about__text">
+                        <h2>Как я работаю</h2>
+                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                            стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    </div>
+                    <div class="about__video">
+                        <video controls>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+        -->
         <section class="about about_gray">
             <div class="wrapper">
                 <div class="about__text">
@@ -164,46 +186,44 @@
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                 </div>
-                <div class="about__video">
-                    <video controls>
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <a href="https://www.w3schools.com/html/mov_bbb.mp4"
+                    data-fancybox
+                    class="about__video">
+                    <img src="images/video.jpg" alt="">
+                </a>
             </div>
         </section>
         <section class="gallery">
             <a href="images/gallery-original-1.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-1.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-1.jpg" alt="">
             </a>
             <a href="images/gallery-original-2.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-2.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-2.jpg" alt="">
             </a>
             <a href="images/gallery-original-3.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-3.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-3.jpg" alt="">
             </a>
             <a href="images/gallery-original-4.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-4.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-4.jpg" alt="">
             </a>
             <a href="images/gallery-original-5.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-5.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-5.jpg" alt="">
             </a>
             <a href="images/gallery-original-6.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-6.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-6.jpg" alt="">
             </a>
             <a href="images/gallery-original-7.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-7.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-7.jpg" alt="">
             </a>
             <a href="images/gallery-original-8.jpg" class="gallery__item"
-                style="background-image: url('images/gallery-8.jpg')">
+                data-fancybox="gallery">
                 <img src="images/gallery-8.jpg" alt="">
             </a>
         </section>
@@ -221,6 +241,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
-
 </html>
