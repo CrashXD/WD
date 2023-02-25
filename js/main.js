@@ -161,15 +161,15 @@ alert(result);
 // let people = new Array();
 // let people2 = ["Римма", "Сергей", "Татьяна", "Дамир",];
 
-let people = [
-    "Сергей",
-    "Дамир",
-    "Римма",
-    "Татьяна",
+// let people = [
+//     "Сергей",
+//     "Дамир",
+//     "Римма",
+//     "Татьяна",
     // [
     //     1, 2, 3
     // ]
-];
+// ];
 
 // console.log(typeof people);
 // console.log(people.length);
