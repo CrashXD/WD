@@ -1,4 +1,4 @@
-setTimeout(function () {
+// setTimeout(function () {
     
     // let first = document.querySelector(".first__description");
     // console.log(first);
@@ -26,28 +26,28 @@ setTimeout(function () {
     // first.append(button);
     // first.after(button);
 
-    let sections = document.querySelectorAll("section");
+    // let sections = document.querySelectorAll("section");
     // sections[1].style.backgroundColor = "red";
-    for (let item of sections) {
-        if (item.matches(".about")) {
-            item.style.backgroundColor = "red";
-        }
-        if (item.matches(".first")) {
+    // for (let item of sections) {
+        // if (item.matches(".about")) {
+            // item.style.backgroundColor = "red";
+        // }
+        // if (item.matches(".first")) {
             // console.log(item.textContent);
             // console.log(item.innerHTML);
             // console.log(item.outerHTML);
-            let button = item.querySelector(".button");
+            // let button = item.querySelector(".button");
             // button.outerHTML = '<a class="button">1234</a>';
             // console.log(button);
             // button = item.querySelector(".button");
             // console.log(button);
             // item.querySelector("button").outerHTML = "123";
             // console.log(button.style.color);
-            let style = getComputedStyle(button);
-            console.log(style.color);
+            // let style = getComputedStyle(button);
+            // console.log(style.color);
             // style.color = "red";
-            button.style.color = "red";
-        }
-    }
+            // button.style.color = "red";
+        // }
+    // }
 
-}, 1000);
+// }, 1000);
