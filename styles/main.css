@@ -769,4 +769,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.popup {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.popup__body {
+  background-color: #EEEFF1;
+  width: 672px;
+  height: 660px;
+  position: relative;
+}
+.popup__close {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

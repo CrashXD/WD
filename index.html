@@ -26,26 +26,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <script src="js/main4.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    <script>
-        /*
-          alert(2+2);
-        */
-        //    3+3;
-        //    let a;
-        //    a = 23284732498 + 24329847329;
-        //    console.log(a);
-        //    a = 3;
-        //    console.log(a);
-        //    a = a + a * a - 100;
-        //    console.log(a);
-        //    a = 2939;
-        //    a = a + a * a - 100;
-        //    console.log(a);
-    </script>
     <header class="header">
         <div class="wrapper">
             <a href="index.html" class="header__logo">
@@ -74,8 +58,7 @@
                     <h1>Дизайн и верстка</h1>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <input type="text" name="email">
-                    <button class="button">Написать мне</button>
+                    <button class="button" data-popup=".popup_form">Написать мне</button>
                 </div>
             </div>
         </section>
@@ -259,6 +242,14 @@
             </div>
         </div>
     </footer>
+    <div class="popup popup_form">
+        <div class="popup__body">
+            <h1>hello</h1>
+            <button class="popup__close">
+                <img src="images/times.svg" alt="">
+            </button>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </body>
 </html>
