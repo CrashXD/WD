@@ -69,11 +69,35 @@
         padding: 36px 0;
 
         &__nav {
+            display: none;
             text-align: center;
 
             ul {
                 flex-direction: column;
             }
+
+            &_active {
+                display: block;
+            }
+        }
+    }
+
+    &__burger {
+        border: none;
+        width: 48px;
+        height: 48px;
+        background-image: url("../images/menu-burger.svg");
+        background-size: cover;
+        display: none;
+
+        &_active {
+            background-image: url("../images/menu-close.svg");
+        }
+    }
+
+    @media (max-width: $mobile) {
+        &__burger {
+            display: block;
         }
     }
 }
